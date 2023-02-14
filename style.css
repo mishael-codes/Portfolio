@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Raleway:wght@400;500;700&display=swap");
+
+:root {
+  /* Color palette */
+  --bg-color: hsl(218, 20%, 16%);
+  --text-color: hsl(0, 0%, 93%);
+  --accent-color: hsl(42, 100%, 71%);
+  --shadow-color: hsl(217, 10%, 25%);
+
+  /* fonts */
+  --main-font: "Raleway", sans-serif;
+  --secondary-font: "Lobster Two", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+#navbar {
+  padding: 0 !important;
+}
+
+.container-fluid {
+  background: linear-gradient(
+    22deg,
+    var(--bg-color) 65%,
+    var(--accent-color) 71%
+  );
+  box-shadow: 0 1px 10px var(--accent-color) !important;
+}
+
+h1,
+h5,
+#job,
+#name {
+  font-size: 2rem !important;
+  color: var(--accent-color) !important;
+  font-family: var(--secondary-font) !important;
+  text-shadow: 0 7px 5px var(--shadow-color);
+}
+
+h1 + nav > ul li a {
+  color: var(--text-color);
+}
+
+.header-btn {
+  color: var(--bg-color);
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  background-color: var(--accent-color);
+}
+
+button {
+  border: 0;
+  background: transparent;
+}
+
+.offcanvas {
+  opacity: 0.9;
+  background-color: var(--bg-color);
+}
+
+.nav-link {
+  color: var(--text-color);
+}
+
+.active {
+  color: var(--accent-color) !important;
+}
+
+.scrollspy-example {
+  color: var(--text-color);
+}
+
+.hero-img {
+  filter: grayscale(100%);
+  opacity: 0.9;
+}
+
+.intro-text p {
+  font-size: 2rem;
+}
+
+#home,
+#about,
+#projects {
+  min-height: 100vh;
+}
+
+#about h2,
+#projects h2,
+#contacts h2 {
+  position: relative;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+#about h3,
+#contacts h3 {
+  position: relative;
+}
+
+#about h2:after,
+#about h3:after,
+#projects h2:after,
+#contacts h2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  border-radius: 20px;
+  background-color: var(--accent-color);
+}
+
+#about p,
+#projects p {
+  font-size: 1.5rem;
+}
+
+.hobby-icons {
+  height: 200px;
+}
+
+.hobby-icons p {
+  font-size: 0.5rem;
+}
+
+.fa-solid {
+  width: 112px;
+  height: 112px;
+  background-color: var(--shadow-color);
+}
+
+.repo-link {
+  color: var(--text-color);
+  text-decoration: none;
+  background-color: var(--shadow-color);
+  transition: 0.5s;
+}
+
+.repo-link:hover {
+  color: var(--shadow-color);
+  background-color: var(--text-color);
+}
+
+.live-site {
+  color: var(--bg-color);
+  font-weight: 700;
+  text-decoration: none;
+  background-color: var(--accent-color);
+  transition: 0.5s;
+}
+
+.live-site:hover {
+  color: var(--accent-color);
+  background-color: var(--bg-color);
+}
+
+#full-name,
+#email,
+#message{
+  border: none;
+  color: var(--text-color);
+  caret-color: var(--accent-color);
+  background-color: var(--shadow-color);
+}
+
+#full-name::placeholder,
+#email::placeholder,
+#message::placeholder{
+  color: hsl(0, 0%, 63%);
+}
+
+.submit{
+  color: var(--bg-color);
+  font-weight: 700;
+  letter-spacing: .2rem;
+  background-color: var(--accent-color);
+}
+
+.social-links{
+  height: 200px;
+}
+
+footer{
+  height: 50px;
+  background-color: var(--shadow-color);
+}
+
+footer p{
+  color: var(--text-color);
+}
