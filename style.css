@@ -58,6 +58,13 @@ h1 + nav > ul li a {
   background-color: var(--accent-color);
 }
 
+.header-btn:hover,
+.submit:hover{
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  background-color: var(--bg-color);
+}
+
 button {
   border: 0;
   background: transparent;
@@ -96,6 +103,7 @@ button {
 }
 
 #about h2,
+#skills h2,
 #projects h2,
 #contacts h2 {
   position: relative;
@@ -110,6 +118,7 @@ button {
 
 #about h2:after,
 #about h3:after,
+#skills h2:after,
 #projects h2:after,
 #contacts h2:after {
   content: "";
@@ -133,6 +142,15 @@ button {
 
 .hobby-icons p {
   font-size: 0.5rem;
+}
+
+.skill-icon {
+  padding: 20px 0;
+  width: 120px;
+  height: 120px;
+  color: var(--accent-color);
+  box-shadow: inset -3px -3px 4px var(--accent-color);
+  background-color: var(--shadow-color);
 }
 
 .fa-solid {
@@ -168,7 +186,7 @@ button {
 
 #full-name,
 #email,
-#message{
+#message {
   border: none;
   color: var(--text-color);
   caret-color: var(--accent-color);
@@ -177,26 +195,57 @@ button {
 
 #full-name::placeholder,
 #email::placeholder,
-#message::placeholder{
+#message::placeholder {
   color: hsl(0, 0%, 63%);
 }
 
-.submit{
+.submit {
   color: var(--bg-color);
   font-weight: 700;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   background-color: var(--accent-color);
+  transition: .5s;
 }
 
-.social-links{
+.social-links {
   height: 200px;
 }
 
-footer{
+.social-links a{
+  color: var(--text-color);
+}
+
+.social-links .fa-brands:hover{
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+footer {
   height: 50px;
   background-color: var(--shadow-color);
 }
 
-footer p{
+footer p {
   color: var(--text-color);
+}
+
+@media screen and (min-width: 992px) {
+  #home {
+    width: 100% !important;
+  }
+
+  .hero-img {
+    width: 600px !important;
+    height: 600px !important;
+  }
+
+  #about {
+    margin: auto;
+    width: 500px;
+  }
+
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

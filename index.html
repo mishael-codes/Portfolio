@@ -75,6 +75,9 @@
                 <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
@@ -99,9 +102,9 @@
       <!-- home -->
       <div
         id="home"
-        class="d-flex align-items-center justify-content-end flex-column-reverse flex-md-row"
+        class="d-flex align-items-center justify-content-end justify-content-lg-around flex-column-reverse flex-md-row"
       >
-        <div class="intro-text text-center mt-5">
+        <div class="intro-text text-center text-md-start mt-5">
           <p>
             My name is <br />
             <span id="name">Mishael Enyi</span>. <br />
@@ -115,22 +118,15 @@
             >
           </button>
         </div>
-        <picture class="mt-4">
-          <source
-            class="hero-img w-100"
-            media="(min-width: 762px)"
-            srcset="images/hero_img_desktop.jpeg"
-          />
-          <img
-            class="hero-img w-100 rounded-circle"
-            src="images/hero_img.jpeg"
-            alt="A photo of me in a traditional outfit"
-          />
-        </picture>
+        <img
+          class="hero-img w-100 rounded-circle"
+          src="images/hero_img.jpeg"
+          alt="A photo of me in a traditional outfit"
+        />
       </div>
       <section
         id="about"
-        class="d-flex align-items-center justify-content-start flex-column text-center"
+        class="d-flex align-items-center justify-content-start flex-column text-center mt-4"
       >
         <h2>About</h2>
         <p>
@@ -156,103 +152,120 @@
         </div>
       </section>
       <section
+        id="skills"
+        class="d-flex align-items-center justify-content-start flex-column text-center"
+      >
+        <h2>Skills</h2>
+        <div class="skill-icons">
+          <i class="fa-brands fa-html5 fa-5x m-5 rounded-4 skill-icon"></i>
+          <i class="fa-brands fa-css3-alt fa-5x m-5 rounded-4 skill-icon"></i>
+          <br />
+          <i class="fa-brands fa-square-js fa-5x m-5 rounded-4 skill-icon"></i>
+          <i class="fa-brands fa-bootstrap fa-5x m-5 rounded-4 skill-icon"></i>
+        </div>
+      </section>
+      <section
         id="projects"
         class="d-flex align-items-center justify-content-start flex-column text-center"
       >
         <h2>Projects</h2>
-        <div class="project-card my-4 d-flex flex-column-reverse">
-          <div class="project-links w-100">
-            <a
-              href="https://github.com/mishael-codes/BMI-Calc"
-              target="_blank"
-              class="repo-link p-3 w-50 rounded-4"
-              >GitHub Repo</a
-            >
-            <a
-              href="https://mishael-codes.github.io/BMI-Calc/"
-              target="_blank"
-              class="live-site p-3 m-3 rounded-4"
-              >Live Site</a
-            >
+        <div class="project-container">
+          <div class="project-card mx-md-3 my-4 d-flex flex-column-reverse">
+            <div class="project-links w-100">
+              <a
+                href="https://github.com/mishael-codes/BMI-Calc"
+                target="_blank"
+                class="repo-link p-3 w-50 rounded-4"
+                >GitHub Repo</a
+              >
+              <a
+                href="https://mishael-codes.github.io/BMI-Calc/"
+                target="_blank"
+                class="live-site p-3 m-3 rounded-4"
+                >Live Site</a
+              >
+            </div>
+            <img
+              class="w-100 mb-4 rounded-4"
+              src="images/projects/Body Mass Index.png"
+              alt="image of my body mass index calculator"
+            />
           </div>
-          <img
-            class="w-100 mb-4"
-            src="images/projects/Body Mass Index.png"
-            alt="image of my body mass index calculator"
-          />
-        </div>
 
-        <div class="project-card my-4 d-flex flex-column-reverse">
-          <div class="project-links">
-            <a
-              href="https://github.com/mishael-codes/huddle-landing-page-with-alternating-feature-blocks-master"
-              target="_blank"
-              class="repo-link p-3 m-3 rounded-4"
-              >GitHub Repo</a
-            >
-            <a
-              href="https://mishael-codes.github.io/huddle-landing-page-with-alternating-feature-blocks-master/"
-              target="_blank"
-              class="live-site p-3 m-3 rounded-4"
-              >Live Site</a
-            >
+          <div class="project-card mx-md-3 my-4 d-flex flex-column-reverse">
+            <div class="project-links">
+              <a
+                href="https://github.com/mishael-codes/huddle-landing-page-with-alternating-feature-blocks-master"
+                target="_blank"
+                class="repo-link p-3 m-3 rounded-4"
+                >GitHub Repo</a
+              >
+              <a
+                href="https://mishael-codes.github.io/huddle-landing-page-with-alternating-feature-blocks-master/"
+                target="_blank"
+                class="live-site p-3 m-3 rounded-4"
+                >Live Site</a
+              >
+            </div>
+            <img
+              class="w-100 mb-4 rounded-4"
+              src="images/projects/Frontend Mentor   Huddle landing page with alternating feature blocks.png"
+              alt="image of my huddle landing page"
+            />
           </div>
-          <img
-            class="w-100 mb-4"
-            src="images/projects/Frontend Mentor   Huddle landing page with alternating feature blocks.png"
-            alt="image of my huddle landing page"
-          />
-        </div>
 
-        <div class="project-card my-4 d-flex flex-column-reverse">
-          <div class="project-links">
-            <a
-              href="https://github.com/mishael-codes/social-media-dashboard-with-theme-switcher-master"
-              target="_blank"
-              class="repo-link p-3 m-3 rounded-4"
-              >GitHub Repo</a
-            >
-            <a
-              href="https://mishael-codes.github.io/social-media-dashboard-with-theme-switcher-master/"
-              target="_blank"
-              class="live-site p-3 m-3 rounded-4"
-              >Live Site</a
-            >
+          <div class="project-card mx-md-3 my-4 d-flex flex-column-reverse">
+            <div class="project-links">
+              <a
+                href="https://github.com/mishael-codes/social-media-dashboard-with-theme-switcher-master"
+                target="_blank"
+                class="repo-link p-3 m-3 rounded-4"
+                >GitHub Repo</a
+              >
+              <a
+                href="https://mishael-codes.github.io/social-media-dashboard-with-theme-switcher-master/"
+                target="_blank"
+                class="live-site p-3 m-3 rounded-4"
+                >Live Site</a
+              >
+            </div>
+            <img
+              class="w-100 mb-4 rounded-4"
+              src="images/projects/Frontend Mentor   Social Media Dashboard.png"
+              alt="image of my social media dashboard in dark theme"
+            />
           </div>
-          <img
-            class="w-100 mb-4"
-            src="images/projects/Frontend Mentor   Social Media Dashboard.png"
-            alt="image of my social media dashboard in dark theme"
-          />
-        </div>
 
-        <div class="project-card my-4 mb-5 d-flex flex-column-reverse">
-          <div class="project-links">
-            <a
-              href="https://github.com/mishael-codes/sunnyside-agency-landing-page-main"
-              target="_blank"
-              class="repo-link p-3 m-3 rounded-4"
-              >GitHub Repo</a
-            >
-            <a
-              href="https://mishael-codes.github.io/sunnyside-agency-landing-page-main/"
-              target="_blank"
-              class="live-site p-3 m-3 rounded-4"
-              >Live Site</a
-            >
+          <div
+            class="project-card mx-md-3 my-4 mb-5 d-flex flex-column-reverse"
+          >
+            <div class="project-links">
+              <a
+                href="https://github.com/mishael-codes/sunnyside-agency-landing-page-main"
+                target="_blank"
+                class="repo-link p-3 m-3 rounded-4"
+                >GitHub Repo</a
+              >
+              <a
+                href="https://mishael-codes.github.io/sunnyside-agency-landing-page-main/"
+                target="_blank"
+                class="live-site p-3 m-3 rounded-4"
+                >Live Site</a
+              >
+            </div>
+            <img
+              class="w-100 mb-4 rounded-4"
+              src="images/projects/Frontend Mentor   Sunnyside agency landing page.png"
+              alt="image of Sunnyside agency landing page project"
+            />
           </div>
-          <img
-            class="w-100 mb-4"
-            src="images/projects/Frontend Mentor   Sunnyside agency landing page.png"
-            alt="image of Sunnyside agency landing page project"
-          />
         </div>
       </section>
       <section
         id="contacts"
         class="d-flex align-items-center justify-content-start flex-column text-center mt-5"
       >
-        <h2>Contacts</h2>
+        <h2>Contact</h2>
         <h3 class="mb-5">Want to work together?</h3>
         <div>
           <form
@@ -284,7 +297,9 @@
               placeholder="Type your message"
               required
             ></textarea>
-            <button type="submit" class="submit w-100 rounded-4 p-2">Submit</button>
+            <button type="submit" class="submit w-100 rounded-4 p-2">
+              SUBMIT
+            </button>
 
             <input type="hidden" name="_template" value="table" />
             <input type="hidden" name="_next" value="thanks.html" />
@@ -296,11 +311,21 @@
             />
           </form>
 
-          <div class="social-links d-flex align-items-center justify-content-evenly mt-4">
-            <i class="fa-brands fa-instagram fa-2x"></i>
-            <i class="fa-brands fa-twitter fa-2x"></i>
-            <i class="fa-brands fa-github fa-2x"></i>
-            <i class="fa-brands fa-linkedin fa-2x"></i>
+          <div
+            class="social-links d-flex align-items-center justify-content-evenly mt-4"
+          >
+            <a href="https://www.instagram.com/mishael.codes/" target="_blank"
+              ><i class="fa-brands fa-instagram fa-2x"></i
+            ></a>
+            <a href="https://twitter.com/mishael_codes" target="_blank"
+              ><i class="fa-brands fa-twitter fa-2x"></i
+            ></a>
+            <a href="https://github.com/mishael-codes" target="_blank"
+              ><i class="fa-brands fa-github fa-2x"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/mishael-enyi/" target="_blank"
+              ><i class="fa-brands fa-linkedin fa-2x"></i
+            ></a>
           </div>
         </div>
       </section>
