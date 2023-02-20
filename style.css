@@ -17,6 +17,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--main-font);
+  /* overflow-x: hidden; */
 }
 
 body {
@@ -90,10 +91,12 @@ button {
 .hero-img {
   filter: grayscale(100%);
   opacity: 0.9;
+  animation: show-img .5s ease-in forwards;
 }
 
 .intro-text p {
   font-size: 2rem;
+  animation: show .5s ease-in forwards;
 }
 
 #home,
@@ -253,5 +256,24 @@ footer p {
   .project-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@keyframes show {
+  0%{
+    transform: translateX(-500px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+@keyframes show-img {
+  0%{
+    transform: translateX(900px);
+  }
+  100%{
+    transform: translateX(0);
   }
 }
