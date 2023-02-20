@@ -234,6 +234,12 @@ footer p {
     width: 100% !important;
   }
 
+  .intro-text{
+    width: 50% !important;
+    padding-left: 5rem;
+    font-size: 5rem;
+  }
+
   .hero-img {
     width: 600px !important;
     height: 600px !important;
