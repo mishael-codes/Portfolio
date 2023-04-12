@@ -1,0 +1,21 @@
+div {
+  background-color: var(--bg-color);
+}
+
+p {
+  color: var(--text-color);
+}
+
+#header-btn {
+  color: var(--bg-color);
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  background-color: var(--accent-color);
+}
+
+#header-btn:hover{
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  background-color: var(--bg-color);
+}
