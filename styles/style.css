@@ -233,6 +233,20 @@ footer p {
   color: var(--text-color);
 }
 
+/* customizing the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: var(--shadow-color);
+}
+
+::-webkit-scrollbar-thumb{
+  /* border-radius: 50%; */
+  background-color: var(--accent-color);
+}
+
 @media screen and (min-width: 992px) {
   #home {
     width: 100% !important;
