@@ -67,6 +67,7 @@ h1 + nav > ul li a {
   border: 2px solid var(--accent-color);
   background-color: var(--bg-color);
 }
+
 #download-btn:hover a {
   color: var(--accent-color);
   background-color: var(--bg-color);
