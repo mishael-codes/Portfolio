@@ -78,9 +78,31 @@ button {
   background: transparent;
 }
 
+.navbar-toggler-icon{
+  background-image: url(../icons/bars-solid.svg) !important;
+}
+
+.navbar-toggler{
+  color: transparent;
+  border: none;
+}
+
 .offcanvas {
   opacity: 0.9;
   background-color: var(--bg-color);
+}
+
+.btn-close{
+  background: none;
+  margin-right: 40px;
+}
+
+.fa-solid.fa-xmark{
+  color: var(--accent-color);
+  width: fit-content;
+  height: fit-content;
+  scale: 1.5;
+  opacity: 1;
 }
 
 .nav-link {
